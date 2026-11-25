@@ -5,6 +5,8 @@
 0 = _OffConfig_Off, 1 = _OffConfig_Low: 0 = _OffConfig_Off, 1 = _OffConfig_Low
 0=Monday, 1=Tue, … 6=Sunday, 7=LegioProtect off, 8=every day: 0=Montag1 = Dienstag..6 = Sonntag7 = Legionellenschutz aus8 = täglich
 000-999; code for the installer's menues: 000-999; code for the installer's menues
+24h outside temperature average (same value as mc Tot24hHc2): 24 Stunden Außentemperaturmittelwert (gleicher Wert wie mc Tot24hHc2)
+24h outside temperature average (same value as Tot24hHc2): 24 Stunden Außentemperaturmittelwert (gleicher Wert wie Tot24hHc2)
 '3WV Schaltspiele: Number of times 3WV value operated': '3WV Schaltspiele: Anzahl der 3WV Umschaltungen'
 'aaucHcNames CH10: name of CH10': 'Name HK10: Name für HK10'
 'aaucHcNames CH11: name of CH11': 'Name HK11: Name für HK11'
@@ -483,6 +485,8 @@ ChPumpBoiler_8: 'ChPumpBoiler_8: Off=0, On=1'
 'CHPumpStatus: 0=HEP_ok: 1= HEP_error; >=2=noHEP': 'CHPumpStatus: 0=HEP_ok: 1= HEP_error; >=2=noHEP'
 ChRequestAsc: ChRequestAsc
 'CircoPump: Power in %': 'Zirkulationspumpe: Leistung in %'
+circuit state and 24h outside temperature average: Kreisstatus und 24 Stunden Außentemperaturmittelwert
+'circuit state: 0=not served, 1=heating, 2=cooling': 'Kreisstatus: 0=nicht versorgt, 1=Heizen, 2=Kühlen'
 CircuitDiaState: CircuitDiaState
 CircuitPeriods: CircuitPeriods
 Circuits_Name_DHW: Kreisname WW
@@ -2860,6 +2864,7 @@ room temperature modulation of Hc2: room temperature modulation of Hc2
 room temperature modulation of Hc3: room temperature modulation of Hc3
 room temperature modulation of the first heating circuit: room temperature modulation of the first heating circuit
 room temperature modulation of the second heating circuit: room temperature modulation of the second heating circuit
+room temperature sent by the remote control (VR 90): Raumtemperatur, gesendet von der Fernbedienung (VR 90)
 room temperature setpoint: Raumsollwert
 room temperature zone 1: Raumisttemperatur Zone 1
 room temperature zone 2: Raumisttemperatur Zone 2
@@ -3285,7 +3290,9 @@ System Date: 'Datum: System Date'
 system flow temp: Systemvorlauf
 system flow temperature: Systemvorlauf
 System OnOFF: System OnOFF
+system parameters sent by the system controller: Systemparameter, gesendet vom Systemregler
 system scheme: Systemschema
+'system state: 1=heating, 2=cooling, 4=hot water': 'Systemstatus: 1=Heizen, 2=Kühlen, 4=Warmwasser'
 System Time: 'Zeit: System Time'
 'System Time: current time': 'System Time: Aktuelle Uhrzeit'
 System Weekday (0=Monday, 5=Saturday, 6=Sunday): 'Wochentag: System Weekday (0=Monday, 5=Saturday, 6=Sunday)'
