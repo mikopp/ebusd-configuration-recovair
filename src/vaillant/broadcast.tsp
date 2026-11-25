@@ -70,6 +70,6 @@ namespace Broadcast {
     state: UCH;
 
     @maxLength(1)
-    raw: HEX;
+    ign: IGN;
   }
 }

@@ -182,7 +182,7 @@ namespace Ehp.Mc {
     model Hc1PumpSpeedControlDirectCircuitWhileO is InstallRegister<percent0>;
   }
 
-  /** data block 0x33: 24h outside temperature average (same value as Tot24hHc2) */
+  /** 24h outside temperature average (same value as Tot24hHc2) */
   @inherit(rm)
   @ext(0x33)
   model Status33 {

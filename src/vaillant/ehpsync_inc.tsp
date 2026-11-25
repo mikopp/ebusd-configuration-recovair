@@ -30,23 +30,15 @@ namespace Ehpsync_inc {
     tempincrease: UCH;
 
     @maxLength(3)
-    raw: HEX;
+    ign: IGN;
   }
 
-  /** data block 0x31, unknown content */
-  @inherit(rm)
-  @ext(0x31)
-  model Status31 {
-    @maxLength(2)
-    value: HEX;
-  }
-
-  /** data block 0x32 with circuit state and 24h outside temperature average */
+  /** circuit state and 24h outside temperature average */
   @inherit(rm)
   @ext(0x32)
   model Status32 {
     @maxLength(5)
-    raw: HEX;
+    ign: IGN;
 
     /** circuit state: 0=not served, 1=heating, 2=cooling */
     state: UCH;
@@ -55,6 +47,6 @@ namespace Ehpsync_inc {
     tot24h: temp2;
 
     @maxLength(2)
-    raw_1: HEX;
+    ign_1: IGN;
   }
 }
