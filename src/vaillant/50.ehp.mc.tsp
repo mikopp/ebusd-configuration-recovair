@@ -6,6 +6,7 @@ import "./iotesthp_inc.tsp";
 import "./errors_inc.tsp";
 import "./roomtempoffset_inc.tsp";
 import "./quick_inc.tsp";
+import "./ehpsync_inc.tsp";
 using Ebus;
 using Ebus.Num;
 using Ebus.Dtm;
@@ -181,6 +182,25 @@ namespace Ehp.Mc {
     model Hc1PumpSpeedControlDirectCircuitWhileO is InstallRegister<percent0>;
   }
 
+  /** data block 0x33: 24h outside temperature average (same value as Tot24hHc2) */
+  @inherit(rm)
+  @ext(0x33)
+  model Block33 {
+    tot24h: temp2;
+  }
+
+  /** default *w */
+  @write
+  @base(MF, 0x5, 0x43)
+  model w_43 {}
+
+  /** room temperature sent by the remote control (VR 90) */
+  @inherit(w_43)
+  @ext
+  model RemoteRoomTemp {
+    value: temp;
+  }
+
   /** included parts */
   union _includes {
     Mcmode_inc,
@@ -189,5 +209,6 @@ namespace Ehp.Mc {
     Errors_inc,
     Roomtempoffset_inc,
     Quick_inc,
+    Ehpsync_inc,
   }
 }

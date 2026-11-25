@@ -34,6 +34,13 @@ namespace Broadcast {
     value: temp2;
   }
 
+  /** 24h outside temperature average (same value as mc Tot24hHc2) */
+  @inherit(b)
+  @ext(4)
+  model Tot24h {
+    value: temp2;
+  }
+
   /** default *b */
   @passive
   @zz(BROADCAST)
@@ -54,5 +61,15 @@ namespace Broadcast {
   @ext(0x6)
   model Load {
     value: onoff;
+  }
+
+  /** system state: 1=heating, 2=cooling, 4=hot water */
+  @inherit(b_1)
+  @ext(0x4a)
+  model SystemState {
+    state: UCH;
+
+    @maxLength(1)
+    raw: HEX;
   }
 }
