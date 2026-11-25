@@ -18,7 +18,7 @@ namespace Ehpsync_inc {
   /** system parameters sent by the system controller */
   @inherit(w_1)
   @ext
-  model SystemParams {
+  model SetSystemParams {
     /** max. pre-deactivation time */
     maxpredeactivation: minutes0;
 
@@ -36,7 +36,7 @@ namespace Ehpsync_inc {
   /** data block 0x31, unknown content */
   @inherit(rm)
   @ext(0x31)
-  model Block31 {
+  model Status31 {
     @maxLength(2)
     value: HEX;
   }
@@ -44,7 +44,7 @@ namespace Ehpsync_inc {
   /** data block 0x32 with circuit state and 24h outside temperature average */
   @inherit(rm)
   @ext(0x32)
-  model Block32 {
+  model Status32 {
     @maxLength(5)
     raw: HEX;
 

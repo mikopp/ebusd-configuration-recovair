@@ -185,7 +185,7 @@ namespace Ehp.Mc {
   /** data block 0x33: 24h outside temperature average (same value as Tot24hHc2) */
   @inherit(rm)
   @ext(0x33)
-  model Block33 {
+  model Status33 {
     tot24h: temp2;
   }
 
@@ -197,7 +197,7 @@ namespace Ehp.Mc {
   /** room temperature sent by the remote control (VR 90) */
   @inherit(w_43)
   @ext
-  model RemoteRoomTemp {
+  model RcRoomTemp {
     value: temp;
   }
 
