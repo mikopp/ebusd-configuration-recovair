@@ -182,6 +182,16 @@ namespace Ehp.Mc {
     model Hc1PumpSpeedControlDirectCircuitWhileO is InstallRegister<percent0>;
   }
 
+  /** heating operating mode (same value as Mode mcmode) */
+  @inherit(rm)
+  @ext(0x31)
+  model Status31 {
+    @maxLength(1)
+    ign: IGN;
+
+    mcmode: mcmode;
+  }
+
   /** 24h outside temperature average (same value as Tot24hHc2) */
   @inherit(rm)
   @ext(0x33)
