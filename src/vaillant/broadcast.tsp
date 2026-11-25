@@ -67,7 +67,7 @@ namespace Broadcast {
   @inherit(b_1)
   @ext(0x4a)
   model SystemState {
-    state: UCH;
+    value: UCH;
 
     @maxLength(1)
     ign: IGN;

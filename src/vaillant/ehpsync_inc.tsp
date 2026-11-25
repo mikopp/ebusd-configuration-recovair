@@ -19,13 +19,13 @@ namespace Ehpsync_inc {
   @inherit(w_1)
   @ext
   model SetSystemParams {
-    /** max. pre-deactivation time */
-    maxpredeactivation: minutes0;
+    /** PreShutDownTime: pre shut down time */
+    preshutdowntime: minutes0;
 
-    /** frost protection delay (same value as uih FrostOverRideTime) */
-    frostdelay: hours;
+    /** FrostOverRideTime: frost over ride time */
+    frostoverridetime: hours;
 
-    /** fast temperature increase */
+    /** TempIncrease: temperature increase */
     @unit("K")
     tempincrease: UCH;
 
@@ -44,7 +44,7 @@ namespace Ehpsync_inc {
     state: UCH;
 
     /** 24h outside temperature average (same value as mc Tot24hHc2) */
-    tot24h: temp2;
+    tot24hhc2: temp2;
 
     @maxLength(2)
     ign_1: IGN;

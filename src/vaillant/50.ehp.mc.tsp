@@ -186,7 +186,7 @@ namespace Ehp.Mc {
   @inherit(rm)
   @ext(0x33)
   model Status33 {
-    tot24h: temp2;
+    value: temp2;
   }
 
   /** default *w */
