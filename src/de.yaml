@@ -1790,7 +1790,6 @@ heating curve of the second heating circuit: 'Heizkurve: heating curve of the se
 'Heating curve: 1/100 resolution': 'Heizkurve: 1/100 resolution'
 'Heating curve: holiday function - remaining days': 'Ferienprogramm aktiv: Restliche Urlaubstage'
 Heating Enable: 'Heating Enable: Heizung aktivieren'
-heating operating mode (same value as Mode mcmode): Betriebsart Heizen (gleicher Wert wie Mode mcmode)
 Heating Override Enable: 'Heating Override Enable: Heizungsüberbrückung aktivieren'
 Heating Override End Time: 'Heating Override End Time: Endzeit Heizungsübersteuerung'
 Heating Override Temp: 'Heating Override Temp: Übersteuerungstemperatur der Heizung'
