@@ -644,6 +644,7 @@ continuos heating: Durchgehendes Heizen
   Tagsollwert weiter.
 Contrast: 'Contrast: Kontrast'
 'control type (430f: 43605; 21930 392f: 61455; 4080)': 'control type (430f: 43605; 21930 392f: 61455; 4080)'
+cooling operating mode sent by the remote control (VR 90), same values as CoolingOperatingModeHc2: Kühlbetriebsart, gesendet von der Fernbedienung (VR 90), gleiche Werte wie CoolingOperatingModeHc2
 cooling operation mode zone 1: Betriebsart für Kühlung Zone 1
 cooling operation mode zone 2: Betriebsart für Kühlung Zone 2
 cooling operation mode zone 3: Betriebsart für Kühlung Zone 3

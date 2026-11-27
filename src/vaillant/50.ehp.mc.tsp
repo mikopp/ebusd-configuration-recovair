@@ -224,6 +224,21 @@ namespace Ehp.Mc {
     value: UCH;
   }
 
+  /** default *w */
+  @write
+  @base(MF, 0x5, 0x4b)
+  model w_4b {}
+
+  /** cooling operating mode sent by the remote control (VR 90), same values as CoolingOperatingModeHc2 */
+  @inherit(w_4b)
+  @ext
+  model SetCoolingOperatingModeHc2 {
+    @maxLength(1)
+    ign: IGN;
+
+    value: hwcmode;
+  }
+
   /** included parts */
   union _includes {
     Mcmode_inc,
