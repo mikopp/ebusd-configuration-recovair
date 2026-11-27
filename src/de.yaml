@@ -486,7 +486,7 @@ ChPumpBoiler_8: 'ChPumpBoiler_8: Off=0, On=1'
 ChRequestAsc: ChRequestAsc
 'CircoPump: Power in %': 'Zirkulationspumpe: Leistung in %'
 circuit state and 24h outside temperature average: Kreisstatus und 24 Stunden Außentemperaturmittelwert
-'circuit state: 0=not served, 1=heating, 2=cooling': 'Kreisstatus: 0=nicht versorgt, 1=Heizen, 2=Kühlen'
+'circuit state: 0=not served, 1=heating, 2=cooling; cc and hwc always 0': 'Kreisstatus: 0=nicht versorgt, 1=Heizen, 2=Kühlen; cc und hwc immer 0'
 CircuitDiaState: CircuitDiaState
 CircuitPeriods: CircuitPeriods
 Circuits_Name_DHW: Kreisname WW

@@ -40,7 +40,7 @@ namespace Ehpsync_inc {
     @maxLength(5)
     ign: IGN;
 
-    /** circuit state: 0=not served, 1=heating, 2=cooling */
+    /** circuit state: 0=not served, 1=heating, 2=cooling; cc and hwc always 0 */
     state: hcpumpmode;
 
     /** 24h outside temperature average (same value as mc Tot24hHc2) */
