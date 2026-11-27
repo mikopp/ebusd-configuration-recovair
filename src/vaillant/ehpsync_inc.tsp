@@ -37,7 +37,7 @@ namespace Ehpsync_inc {
   @inherit(rm)
   @ext(0x32)
   model Status32 {
-    @maxLength(5)
+    @maxLength(6)
     ign: IGN;
 
     /** circuit state: 0=not served, 1=heating, 2=cooling */
