@@ -10,22 +10,19 @@ namespace Ehpsync_inc {
   // EHP: cyclic messages from the system controller UIH (and the VR 90) to the EHP circuits.
   // Seen unasked about every 10 s on a geoTHERM VWS 83/2 (EHP00 SW 0383, UIH00).
 
-  /** default *w */
+  /** default *uw */
   @write
+  @passive
   @base(MF, 0x5, 0x2b)
-  model w_1 {}
+  model uw {}
 
   /** system parameters sent by the system controller */
-  @inherit(w_1)
+  @inherit(uw)
   @ext
   model SetSystemParams {
-    /** PreShutDownTime: pre shut down time */
     preshutdowntime: minutes0;
-
-    /** FrostOverRideTime: frost over ride time */
     frostoverridetime: hours;
 
-    /** TempIncrease: temperature increase */
     @unit("K")
     tempincrease: UCH;
 

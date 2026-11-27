@@ -199,38 +199,41 @@ namespace Ehp.Mc {
     value: temp2;
   }
 
-  /** default *w */
+  /** default *uw */
   @write
+  @passive
   @base(MF, 0x5, 0x43)
-  model w_43 {}
+  model uw_43 {}
 
   /** room temperature sent by the remote control (VR 90) */
-  @inherit(w_43)
+  @inherit(uw_43)
   @ext
   model RcRoomTemp {
     value: temp;
   }
 
-  /** default *w */
+  /** default *uw */
   @write
+  @passive
   @base(MF, 0x5, 0x53)
-  model w_53 {}
+  model uw_53 {}
 
   /** room temperature modulation sent by the remote control (VR 90) */
-  @inherit(w_53)
+  @inherit(uw_53)
   @ext
   model RoomTempSwitchOn {
     @values(Values_rcmode)
     value: UCH;
   }
 
-  /** default *w */
+  /** default *uw */
   @write
+  @passive
   @base(MF, 0x5, 0x4b)
-  model w_4b {}
+  model uw_4b {}
 
   /** cooling operating mode sent by the remote control (VR 90), same values as CoolingOperatingModeHc2 */
-  @inherit(w_4b)
+  @inherit(uw_4b)
   @ext
   model SetCoolingOperatingModeHc2 {
     @maxLength(1)
