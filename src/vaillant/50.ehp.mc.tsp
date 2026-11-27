@@ -186,7 +186,7 @@ namespace Ehp.Mc {
   @inherit(rm)
   @ext(0x31)
   model Status31 {
-    @maxLength(2)
+    @maxLength(1)
     ign: IGN;
 
     value: hcpumpmode;
