@@ -1800,6 +1800,7 @@ heating state: Heizstatus
 Heating Temp 1: 'Heating Temp 1: Heiztemperatur 1'
 Heating Temp 2: 'Heating Temp 2: Heiztemperatur 2'
 Heating Temp Manual Set: 'Heating Temp Manual Set: Manuelle Einstellung der Heiztemperatur'
+heating/cooling demand of the circuit: Heiz-/Kühlanforderung des Kreises
 'HeatingCurve3: Heating curve': 'HeatingCurve3: Heating curve'
 'HeatingPumpFaktor: % pro Kelvin Regelabweichung': 'HeatingPumpFaktor: % pro Kelvin Regelabweichung'
 HeatingPumpKickDuration: HeatingPumpKickDuration
@@ -2864,6 +2865,7 @@ room temperature modulation of Hc2: room temperature modulation of Hc2
 room temperature modulation of Hc3: room temperature modulation of Hc3
 room temperature modulation of the first heating circuit: room temperature modulation of the first heating circuit
 room temperature modulation of the second heating circuit: room temperature modulation of the second heating circuit
+room temperature modulation sent by the remote control (VR 90): Raumaufschaltung, gesendet von der Fernbedienung (VR 90)
 room temperature sent by the remote control (VR 90): Raumtemperatur, gesendet von der Fernbedienung (VR 90)
 room temperature setpoint: Raumsollwert
 room temperature zone 1: Raumisttemperatur Zone 1
@@ -3289,10 +3291,10 @@ System Date: 'Datum: System Date'
 'System Date: current date': 'System Date: Aktuelles Datum'
 system flow temp: Systemvorlauf
 system flow temperature: Systemvorlauf
+'system mode: 0=off, 1=heat, 2=cool, 4=water': 'Systemmodus: 0=aus, 1=Heizen, 2=Kühlen, 4=Warmwasser'
 System OnOFF: System OnOFF
 system parameters sent by the system controller: Systemparameter, gesendet vom Systemregler
 system scheme: Systemschema
-'system state: 1=heating, 2=cooling, 4=hot water': 'Systemstatus: 1=Heizen, 2=Kühlen, 4=Warmwasser'
 System Time: 'Zeit: System Time'
 'System Time: current time': 'System Time: Aktuelle Uhrzeit'
 System Weekday (0=Monday, 5=Saturday, 6=Sunday): 'Wochentag: System Weekday (0=Monday, 5=Saturday, 6=Sunday)'

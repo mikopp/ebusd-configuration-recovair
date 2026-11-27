@@ -63,13 +63,21 @@ namespace Broadcast {
     value: onoff;
   }
 
-  /** system state: 1=heating, 2=cooling, 4=hot water */
+  /** system mode: 0=off, 1=heat, 2=cool, 4=water */
   @inherit(b_1)
   @ext(0x4a)
-  model SystemState {
+  model SystemMode {
+    @values(Values_SystemMode)
     value: UCH;
 
     @maxLength(1)
     ign: IGN;
+  }
+
+  enum Values_SystemMode {
+    off: 0,
+    heat: 1,
+    cool: 2,
+    water: 4,
   }
 }

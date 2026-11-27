@@ -182,6 +182,16 @@ namespace Ehp.Mc {
     model Hc1PumpSpeedControlDirectCircuitWhileO is InstallRegister<percent0>;
   }
 
+  /** heating/cooling demand of the circuit */
+  @inherit(rm)
+  @ext(0x31)
+  model Status31 {
+    @maxLength(1)
+    ign: IGN;
+
+    value: hcpumpmode;
+  }
+
   /** 24h outside temperature average (same value as Tot24hHc2) */
   @inherit(rm)
   @ext(0x33)
@@ -199,6 +209,19 @@ namespace Ehp.Mc {
   @ext
   model RcRoomTemp {
     value: temp;
+  }
+
+  /** default *w */
+  @write
+  @base(MF, 0x5, 0x53)
+  model w_53 {}
+
+  /** room temperature modulation sent by the remote control (VR 90) */
+  @inherit(w_53)
+  @ext
+  model RoomTempSwitchOn {
+    @values(Values_rcmode)
+    value: UCH;
   }
 
   /** included parts */

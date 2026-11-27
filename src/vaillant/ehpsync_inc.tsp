@@ -41,7 +41,7 @@ namespace Ehpsync_inc {
     ign: IGN;
 
     /** circuit state: 0=not served, 1=heating, 2=cooling */
-    state: UCH;
+    state: hcpumpmode;
 
     /** 24h outside temperature average (same value as mc Tot24hHc2) */
     tot24hhc2: temp2;
